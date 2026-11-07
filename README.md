@@ -30,13 +30,8 @@ A knockout counts only when three judges other than the one who raised it confir
 
 > Which of the two is the better hackathon project, judged on the published criteria? One verified, astonishing thing, real fun, or real value to NetBird users can each carry a project; a well-rounded average beats none of them. Relevance to NetBird lifts a good project, it never replaces quality.
 
-### Prizes
 
-- Awesome software
-- Most fun
-- Most valuable to NetBird users
-
-Each team can win one prize at most. The human jury attaches the prizes from the combined ranking.
+The council rates every project and produces one ranking. Prizes are the organisers' decision; the human jury attaches them from the combined ranking, one prize per team at most.
 
 ## How the council works
 
