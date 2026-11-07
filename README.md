@@ -42,8 +42,7 @@ The overall question for every comparison: which of the two is the better hackat
 ## What you submit
 
 - Your GitHub repository link. We judge it as it is at the deadline.
-- A short demo video.
-- Two or three sentences: what it is, for whom, what works today.
+- A pitch and a demo video. Both can live in the README: a few lines on what it is and for whom, and a video link.
 - Private repository: add github.com/philipvollet as a reader.
 
 Declare anything that existed before the hackathon in your README. Commit as you go; a single giant upload at the end and large binaries count against you.
