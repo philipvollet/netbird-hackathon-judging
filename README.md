@@ -2,6 +2,9 @@
 
 Four models from four companies, OpenAI Codex, Google Gemini, Anthropic Claude and Moonshot Kimi, read every repository, score a published rubric with quoted evidence, and rank the field. A human jury holds the other half of the score.
 
+The mechanism in five lines. Each model reads your repository on its own and lists what the README claims. It checks every claim against the code and scores eight criteria, and every score must quote a line from your files or it does not count. The four then compare every project with every other project in pairs, in both orders, on one question: which is the better hackathon project. Your share of won comparisons is your score from the models. Judges never see each other's names or results, and where they disagree it stays visible on your scorecard.
+
+
 The same text as a page: https://philipvollet.github.io/netbird-hackathon-judging/
 
 ## What is judged
