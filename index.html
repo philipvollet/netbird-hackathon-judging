@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How we judge the NetBird hackathon</title>
+<meta name="description" content="Four models from four companies read every repository, score a published rubric with quoted evidence, and rank the field. A human jury holds the other half of the score.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header>
+  <p class="path">netbird hackathon / judging</p>
+  <h1>How we judge</h1>
+  <p class="lede">Four models from four companies read every repository, score a published rubric with quoted evidence, and rank the field. A human jury holds the other half of the score.</p>
+</header>
+
+<section id="criteria">
+  <h2>What is judged</h2>
+  <p>Every project is scored from 1 to 5 on nine criteria. The anchors below say what the two ends of the scale mean.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Criterion</th><th>1 means</th><th>5 means</th></tr></thead>
+    <tbody>
+      <tr><td>Claims match code</td><td>README claims have no code behind them, or the code is a stub</td><td>Every claim traces to code that is wired in and tested, and the commit history shows it was built in the event window</td></tr>
+      <tr><td>Works as declared</td><td>The declared build or run fails, or nothing was declared and the transcript shows a mockup presented as working</td><td>Every declared check passes from a clean machine; the transcript shows the same behaviour</td></tr>
+      <tr><td>Ambition realised in the time</td><td>Trivial scope, a one-shot prompt or API wrapper with no engineering judgement, or an ambitious plan with nothing finished</td><td>A hard thing attempted and finished; the constraint shows judgement, not just effort</td></tr>
+      <tr><td>Problem choice and product decisions</td><td>No identifiable user, or a concept of a plan</td><td>A real pain, visibly understood, with decisions a user would notice</td></tr>
+      <tr><td>Originality and astonishment</td><td>Generic, derivative, hard to care about; a wrapper around someone else's model or API with nothing added</td><td>Surprising, memorable, not seen before, and demonstrably difficult</td></tr>
+      <tr><td>Delight</td><td>No reaction imaginable</td><td>The room would remember it and want to play with it; movement, sound, humour, absurdity all count</td></tr>
+      <tr><td>Clarity of README and demo</td><td>The first paragraph does not say what the project is; no way to run it</td><td>A reader can repeat the project to someone else after one minute; limits are admitted</td></tr>
+      <tr><td>Value to NetBird users</td><td>No relation to NetBird, which costs nothing</td><td>Solves a pain NetBird users have and does something not previously possible with NetBird, or reaches the NetBird community</td></tr>
+      <tr><td>Built here, honestly</td><td>A bulk dump or work that predates the event, not declared</td><td>Clean incremental history inside the window, every outside piece declared and traceable, no large files committed</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Two knockouts</h3>
+  <dl class="rows">
+    <dt>Nothing</dt><dd>No code implements any README claim, and no demo exists.</dd>
+    <dt>Not built here</dt><dd>The work predates the event window and was not declared.</dd>
+  </dl>
+  <p>A knockout counts only when three judges other than the one who raised it confirm it with checked quotes.</p>
+
+  <h3>The overall question</h3>
+  <blockquote>Which of the two is the better hackathon project, judged on the published criteria? One verified, astonishing thing, real fun, or real value to NetBird users can each carry a project; a well-rounded average beats none of them. Relevance to NetBird lifts a good project, it never replaces quality.</blockquote>
+
+  <h3>Prizes</h3>
+  <ul class="plain">
+    <li>Awesome software</li>
+    <li>Most fun</li>
+    <li>Most valuable to NetBird users</li>
+  </ul>
+  <p>Each team can win one prize at most. The human jury attaches the prizes from the combined ranking.</p>
+</section>
+
+<section id="council">
+  <h2>How the council works</h2>
+  <ol class="steps">
+    <li><span class="k">Read in order.</span> Each judge first lists the claims the README makes, then reads every text file in the repository in the same fixed order.</li>
+    <li><span class="k">Trace every claim.</span> Each claim is followed to the code that implements it, or it is marked as missing or not wired in.</li>
+    <li><span class="k">Quote the evidence.</span> Every score comes with a quote from the files, and that quote is checked word for word against the files.</li>
+    <li><span class="k">Hide the names.</span> Judges see each other only as letters, and every pair of projects is shown to them in both orders.</li>
+    <li><span class="k">Ask one question.</span> Each judge compares every pair of projects on the overall question; the share of comparisons a project wins is its number.</li>
+    <li><span class="k">Keep disagreement.</span> Where judges disagree, the scorecard says so and shows the dissenting view with its quote.</li>
+  </ol>
+</section>
+
+<section id="submit">
+  <h2>What teams submit</h2>
+  <dl class="rows">
+    <dt>Repository</dt><dd>The repository URL and the exact commit to judge. Nothing after that commit is read.</dd>
+    <dt>Demo video</dt><dd>A short recording that shows the project doing its job.</dd>
+    <dt>Pitch</dt><dd>A few lines on what the project is, who it is for and why it matters.</dd>
+    <dt>judge.yaml</dt><dd>Optional. It declares how to build, run and check the project, and we run those steps on a clean machine. Without it the criterion works as declared is marked not run, never failed.</dd>
+  </dl>
+  <p>Declare any work that existed before the event in your README. Declared prior work is fine; undeclared prior work can lead to a knockout.</p>
+  <p>Large files are split and read in full, never dropped; binary files are listed but not read. Commits made outside the event window, very large commits and very large files are reported to the judges as evidence, and the judges decide what they mean.</p>
+</section>
+
+<section id="fairness">
+  <h2>Fairness</h2>
+  <ul class="plain">
+    <li>No weights and no sums: the ranking comes from head to head comparisons, not from adding up scores.</li>
+    <li>A score without a checked quote from the repository carries no weight.</li>
+    <li>Judges never see which model or company the other judges are.</li>
+    <li>Every pair of projects is presented in both orders, so going first or second does not help.</li>
+    <li>The human jury holds half of the score and makes every prize decision.</li>
+  </ul>
+</section>
+
+<section id="feedback">
+  <h2>What teams get back</h2>
+  <ul class="plain">
+    <li>A scorecard with every judge's scores and the quotes behind them.</li>
+    <li>The full ranking of the field.</li>
+    <li>The judge prompts, published after the event.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Built on the junta model council. Research behind the rubric: 25 published rubrics, 69 papers, 700 community threads.</p>
+</footer>
+
+</main>
+</body>
+</html>
