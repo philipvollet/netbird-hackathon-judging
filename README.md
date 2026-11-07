@@ -31,7 +31,6 @@ A knockout counts only when three judges other than the one who raised it confir
 > Which of the two is the better hackathon project, judged on the published criteria? One verified, astonishing thing, real fun, or real value to NetBird users can each carry a project; a well-rounded average beats none of them. Relevance to NetBird lifts a good project, it never replaces quality.
 
 
-The council rates every project and produces one ranking. Prizes are the organisers' decision; the human jury attaches them from the combined ranking, one prize per team at most.
 
 ## How the council works
 
@@ -58,7 +57,7 @@ Large files are split and read in full, never dropped; binary files are listed b
 - A score without a checked quote from the repository carries no weight.
 - Judges never see which model or company the other judges are.
 - Every pair of projects is presented in both orders, so going first or second does not help.
-- The human jury holds half of the score and makes every prize decision.
+- The human jury holds half of the score and holds the other half of the score.
 
 ## What teams get back
 
