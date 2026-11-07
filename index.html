@@ -13,85 +13,71 @@
 <header>
   <p class="path">netbird hackathon / judging</p>
   <h1>How we judge</h1>
-  <p class="lede">Four models from four companies, OpenAI Codex, Google Gemini, Anthropic Claude and Moonshot Kimi, read every repository, score a published rubric with quoted evidence, and rank the field. A human jury holds the other half of the score.</p>
-  <p>The mechanism in five lines. Each model reads your repository on its own and lists what the README claims. It checks every claim against the code and scores eight criteria, and every score must quote a line from your files or it does not count. The four then compare every project with every other project in pairs, in both orders, on one question: which is the better hackathon project. Your share of won comparisons is your score from the models. Judges never see each other's names or results, and where they disagree it stays visible on your scorecard.</p>
+  <p class="lede">Half the score comes from four AI models, half from the human jury.</p>
 </header>
+
+<section id="who">
+  <h2>Who judges</h2>
+  <dl class="rows">
+    <dt>OpenAI Codex</dt><dd>GPT, technical judge</dd>
+    <dt>Google Gemini</dt><dd>product judge</dd>
+    <dt>Anthropic Claude</dt><dd>impact judge</dd>
+    <dt>Moonshot Kimi</dt><dd>sceptic</dd>
+    <dt>Human jury</dt><dd>the other half of the score, and the prizes</dd>
+  </dl>
+</section>
+
+<section id="how">
+  <h2>How</h2>
+  <ol class="steps">
+    <li><span class="k">Read.</span> Each model reads your whole repository, README, pitch and video transcript on its own.</li>
+    <li><span class="k">Check.</span> It lists every claim in your README and traces it to the code.</li>
+    <li><span class="k">Score.</span> Eight criteria, 1 to 5, each score with a quote from your files. No quote, no score.</li>
+    <li><span class="k">Compare.</span> Every project against every other, in pairs, both orders, all four models, one question: which is the better hackathon project.</li>
+    <li><span class="k">Rank.</span> Your share of won comparisons is your score from the models. Judges never see each other's names; disagreement stays visible on your scorecard.</li>
+  </ol>
+  <p>Nothing is executed. What the README, the code and the video show is what counts.</p>
+</section>
 
 <section id="criteria">
   <h2>What is judged</h2>
-  <p>Every project is scored from 1 to 5 on eight criteria. The anchors below say what the two ends of the scale mean.</p>
   <div class="scroll">
   <table>
     <thead><tr><th>Criterion</th><th>1 means</th><th>5 means</th></tr></thead>
     <tbody>
-      <tr><td>Claims match code</td><td>README claims have no code behind them, or the code is a stub</td><td>Every claim traces to code that is wired in and tested, and the commit history shows it was built in the event window</td></tr>
-      <tr><td>Ambition realised in the time</td><td>Trivial scope, a one-shot prompt or API wrapper with no engineering judgement, or an ambitious plan with nothing finished</td><td>A hard thing attempted and finished; the constraint shows judgement, not just effort</td></tr>
-      <tr><td>Problem choice and product decisions</td><td>No identifiable user, or a concept of a plan</td><td>A real pain, visibly understood, with decisions a user would notice</td></tr>
-      <tr><td>Originality and astonishment</td><td>Generic, derivative, hard to care about; a wrapper around someone else's model or API with nothing added</td><td>Surprising, memorable, not seen before, and demonstrably difficult</td></tr>
-      <tr><td>Delight</td><td>No reaction imaginable</td><td>The room would remember it and want to play with it; movement, sound, humour, absurdity all count</td></tr>
-      <tr><td>Clarity of README and demo</td><td>The first paragraph does not say what the project is; no way to run it</td><td>A reader can repeat the project to someone else after one minute; limits are admitted</td></tr>
-      <tr><td>Value to NetBird users</td><td>No relation to NetBird, which costs nothing</td><td>Solves a pain NetBird users have and does something not previously possible with NetBird, or reaches the NetBird community</td></tr>
-      <tr><td>Built here, honestly</td><td>A bulk dump or work that predates the event, not declared</td><td>Clean incremental history inside the window, every outside piece declared and traceable, no large files committed</td></tr>
+      <tr><td>Claims match code</td><td>README claims with no code behind them</td><td>Every claim traces to wired, tested code</td></tr>
+      <tr><td>Ambition realised in the time</td><td>Trivial scope, or a wrapper around someone else's API</td><td>A hard thing attempted and finished</td></tr>
+      <tr><td>Problem and product decisions</td><td>No identifiable user</td><td>A real pain, understood, with decisions a user would notice</td></tr>
+      <tr><td>Originality</td><td>Generic, derivative</td><td>Surprising, not seen before, demonstrably difficult</td></tr>
+      <tr><td>Delight</td><td>No reaction imaginable</td><td>The room would remember it and want to play with it</td></tr>
+      <tr><td>Clarity</td><td>The README does not say what it is</td><td>A reader can explain it to someone else after one minute</td></tr>
+      <tr><td>Value to NetBird users</td><td>No relation, which costs nothing</td><td>Solves a pain NetBird users have, or does something new with NetBird</td></tr>
+      <tr><td>Built here, honestly</td><td>A bulk dump or undeclared prior work</td><td>Incremental history inside the event, outside pieces declared</td></tr>
     </tbody>
   </table>
   </div>
-
-  <h3>Two knockouts</h3>
-  <dl class="rows">
-    <dt>Nothing</dt><dd>No code implements any README claim, and no demo exists.</dd>
-    <dt>Not built here</dt><dd>The work predates the event window and was not declared.</dd>
-  </dl>
-  <p>A knockout counts only when three judges other than the one who raised it confirm it with checked quotes.</p>
-
-  <h3>The overall question</h3>
-  <blockquote>Which of the two is the better hackathon project, judged on the published criteria? One verified, astonishing thing, real fun, or real value to NetBird users can each carry a project; a well-rounded average beats none of them. Relevance to NetBird lifts a good project, it never replaces quality.</blockquote>
-</section>
-
-<section id="council">
-  <h2>How the council works</h2>
-  <ol class="steps">
-    <li><span class="k">Read in order.</span> Each judge first lists the claims the README makes, then reads every text file in the repository in the same fixed order.</li>
-    <li><span class="k">Trace every claim.</span> Each claim is followed to the code that implements it, or it is marked as missing or not wired in.</li>
-    <li><span class="k">Quote the evidence.</span> Every score comes with a quote from the files, and that quote is checked word for word against the files.</li>
-    <li><span class="k">Hide the names.</span> Judges see each other only as letters, and every pair of projects is shown to them in both orders.</li>
-    <li><span class="k">Ask one question.</span> Each judge compares every pair of projects on the overall question; the share of comparisons a project wins is its number.</li>
-    <li><span class="k">Keep disagreement.</span> Where judges disagree, the scorecard says so and shows the dissenting view with its quote.</li>
-  </ol>
+  <p>Knockouts: no code behind any claim and no demo; or work from before the event that was not declared. Three judges must confirm a knockout with quotes.</p>
+  <p>The overall question for every comparison: which of the two is the better hackathon project? One verified astonishing thing, real fun, or real value to NetBird users can each carry a project. Relevance to NetBird lifts a good project, it never replaces quality.</p>
 </section>
 
 <section id="submit">
-  <h2>What teams submit</h2>
-  <dl class="rows">
-    <dt>Repository</dt><dd>The repository URL and the exact commit to judge. Nothing after that commit is read.</dd>
-    <dt>Demo video</dt><dd>A short recording that shows the project doing its job.</dd>
-    <dt>Pitch</dt><dd>A few lines on what the project is, who it is for and why it matters.</dd>
-  </dl>
-  <p>Declare any work that existed before the event in your README. Declared prior work is fine; undeclared prior work can lead to a knockout.</p>
-  <p>Large files are split and read in full, never dropped; binary files are listed but not read. Commits made outside the event window, very large commits and very large files are reported to the judges as evidence, and the judges decide what they mean.</p>
-</section>
-
-<section id="fairness">
-  <h2>Fairness</h2>
+  <h2>What you submit</h2>
   <ul class="plain">
-    <li>No weights and no sums: the ranking comes from head to head comparisons, not from adding up scores.</li>
-    <li>A score without a checked quote from the repository carries no weight.</li>
-    <li>Judges never see which model or company the other judges are.</li>
-    <li>Every pair of projects is presented in both orders, so going first or second does not help.</li>
-    <li>The human jury holds the other half of the score.</li>
+    <li>Your GitHub repository link. We judge it as it is at the deadline.</li>
+    <li>A short demo video.</li>
+    <li>Two or three sentences: what it is, for whom, what works today.</li>
+    <li>Private repository: add github.com/philipvollet as a reader.</li>
   </ul>
+  <p>Declare anything that existed before the hackathon in your README. Commit as you go; a single giant upload at the end and large binaries count against you.</p>
 </section>
 
 <section id="feedback">
-  <h2>What teams get back</h2>
-  <ul class="plain">
-    <li>A scorecard with every judge's scores and the quotes behind them.</li>
-    <li>The full ranking of the field.</li>
-    <li>The judge prompts, published after the event.</li>
-  </ul>
+  <h2>What you get back</h2>
+  <p>Your scorecard with every judge's scores and quotes, the ranking of the field, and the judge prompts after the event.</p>
 </section>
 
 <footer>
-  <p>Built on the junta model council. Research behind the rubric: 25 published rubrics, 69 papers, 700 community threads.</p>
+  <p>Built on the junta model council.</p>
 </footer>
 
 </main>
