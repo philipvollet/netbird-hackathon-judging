@@ -18,13 +18,12 @@
 
 <section id="criteria">
   <h2>What is judged</h2>
-  <p>Every project is scored from 1 to 5 on nine criteria. The anchors below say what the two ends of the scale mean.</p>
+  <p>Every project is scored from 1 to 5 on eight criteria. The anchors below say what the two ends of the scale mean.</p>
   <div class="scroll">
   <table>
     <thead><tr><th>Criterion</th><th>1 means</th><th>5 means</th></tr></thead>
     <tbody>
       <tr><td>Claims match code</td><td>README claims have no code behind them, or the code is a stub</td><td>Every claim traces to code that is wired in and tested, and the commit history shows it was built in the event window</td></tr>
-      <tr><td>Works as declared</td><td>The declared build or run fails, or nothing was declared and the transcript shows a mockup presented as working</td><td>Every declared check passes from a clean machine; the transcript shows the same behaviour</td></tr>
       <tr><td>Ambition realised in the time</td><td>Trivial scope, a one-shot prompt or API wrapper with no engineering judgement, or an ambitious plan with nothing finished</td><td>A hard thing attempted and finished; the constraint shows judgement, not just effort</td></tr>
       <tr><td>Problem choice and product decisions</td><td>No identifiable user, or a concept of a plan</td><td>A real pain, visibly understood, with decisions a user would notice</td></tr>
       <tr><td>Originality and astonishment</td><td>Generic, derivative, hard to care about; a wrapper around someone else's model or API with nothing added</td><td>Surprising, memorable, not seen before, and demonstrably difficult</td></tr>
@@ -73,7 +72,6 @@
     <dt>Repository</dt><dd>The repository URL and the exact commit to judge. Nothing after that commit is read.</dd>
     <dt>Demo video</dt><dd>A short recording that shows the project doing its job.</dd>
     <dt>Pitch</dt><dd>A few lines on what the project is, who it is for and why it matters.</dd>
-    <dt>judge.yaml</dt><dd>Optional. It declares how to build, run and check the project, and we run those steps on a clean machine. Without it the criterion works as declared is marked not run, never failed.</dd>
   </dl>
   <p>Declare any work that existed before the event in your README. Declared prior work is fine; undeclared prior work can lead to a knockout.</p>
   <p>Large files are split and read in full, never dropped; binary files are listed but not read. Commits made outside the event window, very large commits and very large files are reported to the judges as evidence, and the judges decide what they mean.</p>

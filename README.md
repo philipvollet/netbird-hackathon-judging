@@ -6,12 +6,11 @@ The same text as a page: https://philipvollet.github.io/netbird-hackathon-judgin
 
 ## What is judged
 
-Every project is scored from 1 to 5 on nine criteria. The anchors below say what the two ends of the scale mean.
+Every project is scored from 1 to 5 on eight criteria. The anchors below say what the two ends of the scale mean.
 
 | Criterion | 1 means | 5 means |
 |---|---|---|
 | Claims match code | README claims have no code behind them, or the code is a stub | Every claim traces to code that is wired in and tested, and the commit history shows it was built in the event window |
-| Works as declared | The declared build or run fails, or nothing was declared and the transcript shows a mockup presented as working | Every declared check passes from a clean machine; the transcript shows the same behaviour |
 | Ambition realised in the time | Trivial scope, a one-shot prompt or API wrapper with no engineering judgement, or an ambitious plan with nothing finished | A hard thing attempted and finished; the constraint shows judgement, not just effort |
 | Problem choice and product decisions | No identifiable user, or a concept of a plan | A real pain, visibly understood, with decisions a user would notice |
 | Originality and astonishment | Generic, derivative, hard to care about; a wrapper around someone else's model or API with nothing added | Surprising, memorable, not seen before, and demonstrably difficult |
@@ -53,7 +52,6 @@ Each team can win one prize at most. The human jury attaches the prizes from the
 - **Repository.** The repository URL and the exact commit to judge. Nothing after that commit is read.
 - **Demo video.** A short recording that shows the project doing its job.
 - **Pitch.** A few lines on what the project is, who it is for and why it matters.
-- **judge.yaml.** Optional. It declares how to build, run and check the project, and we run those steps on a clean machine. Without it the criterion works as declared is marked not run, never failed.
 
 Declare any work that existed before the event in your README. Declared prior work is fine; undeclared prior work can lead to a knockout.
 
