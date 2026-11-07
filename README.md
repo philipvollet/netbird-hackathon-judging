@@ -1,6 +1,6 @@
 # How we judge
 
-Four models from four companies read every repository, score a published rubric with quoted evidence, and rank the field. A human jury holds the other half of the score.
+Four models from four companies, OpenAI Codex, Google Gemini, Anthropic Claude and Moonshot Kimi, read every repository, score a published rubric with quoted evidence, and rank the field. A human jury holds the other half of the score.
 
 The same text as a page: https://philipvollet.github.io/netbird-hackathon-judging/
 
